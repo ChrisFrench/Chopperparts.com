@@ -1,0 +1,33 @@
+{	
+		"repositories": [
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Library.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Admin.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Mailer.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Pages.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Blog.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Users.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Search.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Assets.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Shop.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Activity.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Minify.git" },
+		{ "type": "vcs", "url": "git@github.com:AmmoniteNetworks/Modules.git" }
+    ],
+    "require": {
+    	"bcosca/fatfree": "3.5.1",
+    	"joomla/registry": "~1.0",
+        "ammonitenetworks/library": "dev-master",
+        "ammonitenetworks/admin": "dev-master",
+        "ammonitenetworks/mailer": "dev-master",
+        "ammonitenetworks/pages": "dev-master",
+        "ammonitenetworks/blog": "dev-master",
+        "ammonitenetworks/users": "dev-master",
+        "ammonitenetworks/search": "dev-master",
+        "ammonitenetworks/assets": "dev-master",
+        "ammonitenetworks/shop": "dev-master",
+        "ammonitenetworks/activity": "dev-master",
+        "ammonitenetworks/minify": "dev-master",
+        "ammonitenetworks/modules": "dev-master"
+        
+    }
+}
