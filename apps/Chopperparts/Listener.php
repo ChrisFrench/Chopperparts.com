@@ -42,6 +42,18 @@ class Listener  extends \Prefab
     }
     
     
+    // Fire a beforeShopCheckout event that allows Listeners to hijack the checkout process
+    // Payment processing & authorization could occur at this event, and the Listener would update the checkout object
+    // Add the checkout model to the event
+    public function beforeShopCheckout($event)
+    {
+        $checkout = $event->getArgument('checkout');
+    
+    
+        $this->standardShippingMethods($event);
+    
+    }
+    
     /**
      * Set the shipping methods for a cart when the user is not a wholesaler
      *

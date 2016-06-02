@@ -27,7 +27,15 @@
         "ammonitenetworks/shop": "dev-master",
         "ammonitenetworks/activity": "dev-master",
         "ammonitenetworks/minify": "dev-master",
-        "ammonitenetworks/modules": "dev-master"
+        "ammonitenetworks/modules": "dev-master",
+        "psr/log": "^1.0",
+        "braintree/braintree_php": "3.13.0"
         
+    },
+    "autoload": {
+        "files": ["vendor/ammonitenetworks/shop/src/RocketShipIt/RocketShipIt/RocketShipIt.php"],
+        "psr-0": {
+            "RocketShipIt\\": "vendor/ammonitenetworks/shop/src/RocketShipIt/"
+        }
     }
 }
