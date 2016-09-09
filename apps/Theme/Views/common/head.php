@@ -11,7 +11,6 @@
 	<?php if(!empty($noindex)) :?>
 	 <meta name="robots" content="noindex">
 	 <?php endif; ?>
-	<meta name="author" content="rallysportdirect.com">
 	<link rel="icon" type="image/png" href="/favicon.ico">
 	
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>

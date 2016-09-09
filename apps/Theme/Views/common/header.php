@@ -6,16 +6,16 @@
                     <?php echo  \Modules\Factory::render( 'left-top-header', \Base::instance()->get('PARAMS.0') ); ?>
                     <ul class="pull-left">
                         <li>
-                            <a href="#">Call us:   (012) 3456 7890</a>
+                            <a href="#">Call us:   <?php echo \Shop\Models\Settings::fetch()->get('store_address.phone_number'); ?></a>
                         </li>
                     </ul>
                         <?php echo  \Modules\Factory::render( 'top-nav', \Base::instance()->get('PARAMS.0') ); ?>
                     <ul class="pull-right">
                         <li>
-                            <a href="/account">My Account</a>
+                            <a href="/shop/account">My Account</a>
                         </li>
                         <li>
-                            <a href="#">Wishlist</a>
+                            <a href="/shop/wishlist">Wishlist</a>
                         </li>
                         <li>
                             <a href="/shop/cart">My Cart</a>

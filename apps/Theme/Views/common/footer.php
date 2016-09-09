@@ -7,12 +7,12 @@
                     <div class="footer-left">
                         <div class="contact-info widget">
                             <h3 class="widget-title">Contact info</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <p><?php echo \Shop\Models\Settings::fetch()->get('store.description'); ?></p>
                             <ul>
                                 <li>
                                     <span>Address :</span>
                                     <address>
-                                        123 Sky Tower address name, Los Algeles, ,<br> USA, Country, 01234
+                                        <?php echo \Shop\Models\Settings::fetch()->get('store_address.line_1'); ?> <?php echo \Shop\Models\Settings::fetch()->get('store_address.line_2'); ?>, <?php echo \Shop\Models\Settings::fetch()->get('store_address.city'); ?>, <?php echo \Shop\Models\Settings::fetch()->get('store_address.region'); ?> ,<br><?php echo \Shop\Models\Settings::fetch()->get('store_address.country'); ?> <?php echo \Shop\Models\Settings::fetch()->get('store_address.postal_code'); ?> 
                                     </address>
                                 </li>
                                 <li>

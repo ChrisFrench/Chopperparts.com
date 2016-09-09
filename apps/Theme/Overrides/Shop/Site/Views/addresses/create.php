@@ -1,4 +1,4 @@
-
+<div class="container">
     <ol class="breadcrumb row">
         <li>
             <a href="./shop/account">My Account</a>
@@ -19,4 +19,4 @@
         </div>
     
     </form>
-
+</div>

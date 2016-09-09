@@ -16,3 +16,14 @@ $app->set('db.mongo.database', 'chopperparts');
 $app->set('db.mongo.server','mongodb://localhost:27017' );
 
 $app->set('HOST','www.chopperparts.com' );
+
+\Braintree_Configuration::environment('sandbox');
+\Braintree_Configuration::merchantId('5xcnbk7syn4gb8zw');
+\Braintree_Configuration::publicKey('d7p8xfcsj7z4tz46');
+\Braintree_Configuration::privateKey('8e59484a326e266e06dfd58ce55eb450');
+
+$app->set('mailer.email_override', "chris@ammonitenetworks.com");
+
+//BRAINTREE
+$app->set('braintree.paypal.merchant', 'Northridge4x4LLC_instant');
+$app->set('braintree.creditcard.merchant', 'Northridge4x4LLC_instant_2');

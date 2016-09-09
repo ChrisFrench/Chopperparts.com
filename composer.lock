@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4523b65a4c1caeeea2dbc9f97364389b",
-    "content-hash": "7be953e3778eb7b97baaa29b6430b749",
+    "hash": "948bc56b4ffcd14ceb294591b32bec18",
+    "content-hash": "3e33a3b3d8c208a86f80d43ffd185bcc",
     "packages": [
         {
             "name": "ammonitenetworks/activity",
@@ -514,12 +514,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AmmoniteNetworks/Shop.git",
-                "reference": "382427e407fc83a0519fa7df49bb795a7b9497d1"
+                "reference": "a783d9a79bbf671e6809ba1e4ceb06689f2579b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AmmoniteNetworks/Shop/zipball/382427e407fc83a0519fa7df49bb795a7b9497d1",
-                "reference": "382427e407fc83a0519fa7df49bb795a7b9497d1",
+                "url": "https://api.github.com/repos/AmmoniteNetworks/Shop/zipball/a783d9a79bbf671e6809ba1e4ceb06689f2579b0",
+                "reference": "a783d9a79bbf671e6809ba1e4ceb06689f2579b0",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +559,7 @@
                 "source": "https://github.com/AmmoniteNetworks/Shop/tree/master",
                 "issues": "https://github.com/AmmoniteNetworks/Shop/issues"
             },
-            "time": "2016-06-02 05:35:49"
+            "time": "2016-06-02 19:52:20"
         },
         {
             "name": "ammonitenetworks/users",
@@ -645,6 +645,53 @@
             "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
             "homepage": "http://fatfreeframework.com/",
             "time": "2015-12-31 17:20:37"
+        },
+        {
+            "name": "braintree/braintree_php",
+            "version": "3.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/braintree/braintree_php.git",
+                "reference": "cbee7c8c998aff5d5df682cc0b2cf3f403dbba76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/cbee7c8c998aff5d5df682cc0b2cf3f403dbba76",
+                "reference": "cbee7c8c998aff5d5df682cc0b2cf3f403dbba76",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-hash": "*",
+                "ext-openssl": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Braintree": "lib/"
+                },
+                "psr-4": {
+                    "Braintree\\": "lib/Braintree"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Braintree",
+                    "homepage": "http://www.braintreepayments.com"
+                }
+            ],
+            "description": "Braintree PHP Client Library",
+            "time": "2016-05-23 18:22:21"
         },
         {
             "name": "cloudinary/cloudinary_php",

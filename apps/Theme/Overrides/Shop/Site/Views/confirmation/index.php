@@ -1,4 +1,4 @@
-
+<div class="container">
     <?php if (empty($order->id)) { ?>
         <h1>Order not found. <a href="./shop"><small>Go Shopping</small></a></h1>
     <?php } else { ?>
@@ -34,13 +34,7 @@
         	echo $this->renderView('Shop/Site/Views::confirmation/tracking_gtm.php');
         } 
         ?>
-		<script charset="utf-8" type="text/javascript">
-          r3_placement('purchase_complete_page.rr1');
-        </script>
 		
-		<script charset="utf-8" type="text/javascript">
-        	rr_flush_onload();
-        </script>​
         
         <?php /* ?>
         <p>
@@ -61,3 +55,4 @@
         */ ?>
         
     <?php } ?>
+</div>
