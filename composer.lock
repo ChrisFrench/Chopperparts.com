@@ -111,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AmmoniteNetworks/Assets.git",
-                "reference": "7e00aefca0fb1d853bbca05b68a2d2f0ee10f6ad"
+                "reference": "da0bed6c09ad6d5d67373282462e05a6ccfa6fe4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AmmoniteNetworks/Assets/zipball/7e00aefca0fb1d853bbca05b68a2d2f0ee10f6ad",
-                "reference": "7e00aefca0fb1d853bbca05b68a2d2f0ee10f6ad",
+                "url": "https://api.github.com/repos/AmmoniteNetworks/Assets/zipball/da0bed6c09ad6d5d67373282462e05a6ccfa6fe4",
+                "reference": "da0bed6c09ad6d5d67373282462e05a6ccfa6fe4",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +159,7 @@
                 "source": "https://github.com/AmmoniteNetworks/Assets/tree/master",
                 "issues": "https://github.com/AmmoniteNetworks/Assets/issues"
             },
-            "time": "2016-04-25 00:27:07"
+            "time": "2016-08-12 16:30:24"
         },
         {
             "name": "ammonitenetworks/blog",
@@ -216,12 +216,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AmmoniteNetworks/Library.git",
-                "reference": "0266444603069983010b72688dcc4be6b4a65396"
+                "reference": "933db3ce9a840d3798a2b3d1bb8d4def62ee4f45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AmmoniteNetworks/Library/zipball/0266444603069983010b72688dcc4be6b4a65396",
-                "reference": "0266444603069983010b72688dcc4be6b4a65396",
+                "url": "https://api.github.com/repos/AmmoniteNetworks/Library/zipball/933db3ce9a840d3798a2b3d1bb8d4def62ee4f45",
+                "reference": "933db3ce9a840d3798a2b3d1bb8d4def62ee4f45",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "source": "https://github.com/AmmoniteNetworks/Library/tree/master",
                 "issues": "https://github.com/AmmoniteNetworks/Library/issues"
             },
-            "time": "2016-04-10 20:16:26"
+            "time": "2016-08-19 18:44:42"
         },
         {
             "name": "ammonitenetworks/mailer",
@@ -514,12 +514,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AmmoniteNetworks/Shop.git",
-                "reference": "a783d9a79bbf671e6809ba1e4ceb06689f2579b0"
+                "reference": "5dd61dcac2b73942404c96c1522ce907cce1ddba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AmmoniteNetworks/Shop/zipball/a783d9a79bbf671e6809ba1e4ceb06689f2579b0",
-                "reference": "a783d9a79bbf671e6809ba1e4ceb06689f2579b0",
+                "url": "https://api.github.com/repos/AmmoniteNetworks/Shop/zipball/5dd61dcac2b73942404c96c1522ce907cce1ddba",
+                "reference": "5dd61dcac2b73942404c96c1522ce907cce1ddba",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +559,7 @@
                 "source": "https://github.com/AmmoniteNetworks/Shop/tree/master",
                 "issues": "https://github.com/AmmoniteNetworks/Shop/issues"
             },
-            "time": "2016-06-02 19:52:20"
+            "time": "2016-08-25 16:08:44"
         },
         {
             "name": "ammonitenetworks/users",
@@ -1033,16 +1033,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v5.2.15",
+            "version": "v5.2.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "d0186171b28af4f06ac2ad8a84a8f3d6cbc3ba6c"
+                "reference": "1d85f9ef3ecfc42bbc4f3c70d5e37ca9a65f629a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/d0186171b28af4f06ac2ad8a84a8f3d6cbc3ba6c",
-                "reference": "d0186171b28af4f06ac2ad8a84a8f3d6cbc3ba6c",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/1d85f9ef3ecfc42bbc4f3c70d5e37ca9a65f629a",
+                "reference": "1d85f9ef3ecfc42bbc4f3c70d5e37ca9a65f629a",
                 "shasum": ""
             },
             "require": {
@@ -1089,7 +1089,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2016-05-10 18:39:36"
+            "time": "2016-06-06 09:09:37"
         },
         {
             "name": "psr/log",

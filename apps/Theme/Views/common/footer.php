@@ -15,16 +15,19 @@
                                         <?php echo \Shop\Models\Settings::fetch()->get('store_address.line_1'); ?> <?php echo \Shop\Models\Settings::fetch()->get('store_address.line_2'); ?>, <?php echo \Shop\Models\Settings::fetch()->get('store_address.city'); ?>, <?php echo \Shop\Models\Settings::fetch()->get('store_address.region'); ?> ,<br><?php echo \Shop\Models\Settings::fetch()->get('store_address.country'); ?> <?php echo \Shop\Models\Settings::fetch()->get('store_address.postal_code'); ?> 
                                     </address>
                                 </li>
+                                <?php /*?>
                                 <li>
                                     <span>Phone :</span>
                                     (012) 345 6789
                                 </li>
+                                <?php */ ?>
                                 <li>
                                     <span>Email :</span>
-                                    info@templaza.com
+                                    contact@chopperparts.com
                                 </li>
                             </ul>
                         </div>
+                        <?php /*?>
                         <div class="widget">
                             <form class="tz-subcribe">
                                 <input type="text" name="sub" value="" placeholder="Enter your email...">
@@ -53,18 +56,21 @@
                                 </li>
                             </ul>
                         </div>
+                        <?php */ ?>
                     </div>
                     <!--End footer left-->
 
                     <!--Start footer right-->
                     <div class="footer-right">
                         <div class="tz-widget-clients widget">
-                            <h3 class="widget-title">What Customers say</h3>
+                            <h3 class="widget-title">Free Shipping</h3>
                             <div class="tz-widget-say">
+                            <?php /*?>
                                 <img src="/theme/images/say.jpg" alt="Kathy Young">
-                                <div class="entry-say">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor     incididunt ut labore et dolore magna aliqua.</p>
-                                    <span>Kathy Young</span>
+                                <?php */ ?>
+                                <div class="">
+                                    <p>Free Shipping on all orders over $200 Dollars</p>
+                                    <span>Inside the United States Lower 48</span>
                                 </div>
                             </div>
                         </div>
@@ -74,20 +80,16 @@
                                     <h3 class="widget-title">HOW TO BUY</h3>
                                     <ul>
                                         <li>
-                                            <a href="#">Contact Us</a>
+                                            <a href="/contact-us">Contact Us</a>
                                         </li>
                                         <li>
-                                            <a href="#">Returns</a>
+                                            <a href="/pages/returns">Returns</a>
                                         </li>
+                                       
                                         <li>
-                                            <a href="#">Site Map</a>
+                                            <a href="/brands">Brands</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Brands</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Gift Vouchers</a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -96,20 +98,16 @@
                                     <h3 class="widget-title">MY ACCOUNT</h3>
                                     <ul>
                                         <li>
-                                            <a href="#">My Account</a>
+                                            <a href="/shop/account">My Account</a>
                                         </li>
                                         <li>
-                                            <a href="#">Order History</a>
+                                            <a href="/shop/account">Order History</a>
                                         </li>
                                         <li>
-                                            <a href="#">Wish List</a>
+                                            <a href="/shop/wishlist">Wish List</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Newsletter</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Specials</a>
-                                        </li>
+                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -118,19 +116,15 @@
                                     <h3 class="widget-title">Infomation</h3>
                                     <ul>
                                         <li>
-                                            <a href="#">About Us</a>
+                                            <a href="/pages/about-us">About Us</a>
+                                        </li>
+                                       
+                                       
+                                        <li>
+                                            <a href="/pages/term-conditions ">Term & Conditions</a>
                                         </li>
                                         <li>
-                                            <a href="#">Returns</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Term & Conditions</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Privacy Policy</a>
+                                            <a href="/pages/privacy-policy ">Privacy Policy</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -149,6 +143,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="pull-right">
+                            <?php /*?>
                                 <span class="payments-method">
                                     <a href="#"><img src="/theme/images/Visa.png" alt="visa"></a>
                                     <a href="#"><img src="/theme/images/Intersection.png" alt="Intersection"></a>
@@ -156,6 +151,7 @@
                                     <a href="#"><img src="/theme/images/Amazon.png" alt="Amazon"></a>
                                     <a href="#"><img src="/theme/images/Discover.png" alt="Discover"></a>
                                 </span>
+                                <?php */ ?>
                             </div>
                         </div>
                     </div>
@@ -172,4 +168,7 @@
 
 <script src="/theme/js/owl.carousel.js"></script>
 <script src="/theme/js/custom.js"></script>
+<script>
+  ga('send', 'pageview');
+</script>
  

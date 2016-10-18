@@ -518,7 +518,7 @@
                             <?php $products = \Shop\Models\Products::collection()->find(['publication.status' => 'published']);?>
                                 <?php foreach($products as $product) : ?>
                                 <?php $product = (new \Shop\Models\Products)->bind($product); ?>
-                                <div class="col-md-3 col-sm-6">
+                                <div class="col-md-3 col-sm-6" style="padding-bottom: 10px;">
 
                                     <!--Start product item-->
                                     <div class="product-item">
@@ -527,21 +527,17 @@
                                            <?php echo cl_image_tag($product->image(), array("gravity"=>"custom", "height"=>161, "width"=>270, "crop"=>"fill", "fetch_format"=>"auto")); ?>
                                             <div class="product-meta">
                                                 <a class="add-to-cart" href="<?php echo $product->url(); ?>">Product Details</a>
+                                                <?php  /*?>
                                                 <span class="quick-view">
                                                     <a href="#">Quick view</a>
                                                 </span>
+                                                <?php */ ?>
                                             </div>
                                         </div>
                                         <div class="product-infomation">
                                             <h4><a href="<?php echo $product->url(); ?>"><?php echo $product->title; ?></a></h4>
-                                            <span class="product-price">$900.00</span>
-                                            <span class="product-attr">
-                                                <i class="fa fa-circle light-blue"></i>
-                                                <i class="fa fa-circle orange"></i>
-                                                <i class="fa fa-circle blueviolet"></i>
-                                                <i class="fa fa-circle orange-dark"></i>
-                                                <i class="fa fa-circle steelblue"></i>
-                                            </span>
+                                            <span class="product-price"><?php echo \Shop\Models\Currency::format( $product->price() ); ?></span>
+                                           
                                         </div>
                                     </div>
                                     <!--End product item-->
@@ -572,7 +568,7 @@
                 <div class="get-in-touch">
                     <h3>GET IN TOUCH</h3>
                     <p>Have an idea or a product we should know about? Let us know!</p>
-                    <a class="buynow" href="/contactus">Buy now</a>
+                    <a class="buynow" href="/contact-us">Contact Us</a>
                 </div>
                 <!--End Get In Touch-->
 

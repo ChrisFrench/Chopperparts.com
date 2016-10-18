@@ -17,6 +17,13 @@ $app->set('db.mongo.server','mongodb://localhost:27017' );
 
 $app->set('HOST','www.chopperparts.com' );
 
+
+\Cloudinary::config(array(
+    "cloud_name" => "chopper-parts",
+    "api_key"    => "126425756666297",
+    "api_secret" => "8XoUt8-lapkBMoKdI1eZKgUSVWk"
+));
+
 \Braintree_Configuration::environment('sandbox');
 \Braintree_Configuration::merchantId('5xcnbk7syn4gb8zw');
 \Braintree_Configuration::publicKey('d7p8xfcsj7z4tz46');
@@ -25,5 +32,5 @@ $app->set('HOST','www.chopperparts.com' );
 $app->set('mailer.email_override', "chris@ammonitenetworks.com");
 
 //BRAINTREE
-$app->set('braintree.paypal.merchant', 'Northridge4x4LLC_instant');
-$app->set('braintree.creditcard.merchant', 'Northridge4x4LLC_instant_2');
+//$app->set('braintree.paypal.merchant', 'Northridge4x4LLC_instant');
+//$app->set('braintree.creditcard.merchant', 'Northridge4x4LLC_instant_2');

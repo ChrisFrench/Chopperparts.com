@@ -4,11 +4,13 @@
                 <!--Start class header top-->
                 <div class="header-top">
                     <?php echo  \Modules\Factory::render( 'left-top-header', \Base::instance()->get('PARAMS.0') ); ?>
+                    <?php /*?>
                     <ul class="pull-left">
                         <li>
                             <a href="#">Call us:   <?php echo \Shop\Models\Settings::fetch()->get('store_address.phone_number'); ?></a>
                         </li>
                     </ul>
+                    <?php */ ?>
                         <?php echo  \Modules\Factory::render( 'top-nav', \Base::instance()->get('PARAMS.0') ); ?>
                     <ul class="pull-right">
                         <li>
@@ -23,6 +25,8 @@
                         <li>
                             <a href="/shop/checkout">Checkout</a>
                         </li>
+                        <?php $identity = \Dsc\System::instance()->get('auth')->getIdentity(); ?>
+                        <?php if(empty($identity->id)) :?>
                         <li class="tz-header-login">
                             <a href="#">Login</a>
                             <div class="tz-login-form">
@@ -47,6 +51,11 @@
                                 </form>
                             </div>
                         </li>
+                        <?php else : ?>
+                        <li>
+                            <a href="/logout">Logout</a>
+                        </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <!--End class header top-->
@@ -63,56 +72,7 @@
                         </form>
                         <!--End Form search-->
 
-                        <!--live search-->
-                        <div class="live-search">
-                            <ul>
-                                <li>
-                                    <div class="live-img"><img src="/theme/images/product/product-search1.jpg" alt="product search one"></div>
-                                    <div class="live-search-content">
-                                        <h6><a href="single-product.html">Defy Advanced</a></h6>
-                                        <span class="live-meta">
-                                            <a href="single-product.html">$2650.00</a>
-                                            <span class="product-color">
-                                                <i class="light-blue"></i>
-                                                <i class="orange"></i>
-                                                <i class="orange-dark"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="live-img"><img src="/theme/images/product/product-search2.jpg" alt="product search two"></div>
-                                    <div class="live-search-content">
-                                        <h6><a href="single-product.html">Defy Advanced</a></h6>
-                                        <span class="live-meta">
-                                            <a href="single-product.html">$2650.00</a>
-                                            <span class="product-color">
-                                                <i class="light-blue"></i>
-                                                <i class="orange"></i>
-                                                <i class="blueviolet"></i>
-                                                <i class="orange-dark"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="live-img"><img src="/theme/images/product/product-search3.jpg" alt="product search one"></div>
-                                    <div class="live-search-content">
-                                        <h6><a href="single-product.html">Defy Advanced</a></h6>
-                                        <span class="live-meta">
-                                            <a href="single-product.html">$2650.00</a>
-                                            <span class="product-color">
-                                                <i class="blueviolet"></i>
-                                                <i class="light-blue"></i>
-                                                <i class="orange-dark"></i>
-                                                <i class="orange"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--End live search-->
+                        
                     </div>
                 </div>
                 <!--End class header content-->

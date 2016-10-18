@@ -54,6 +54,7 @@ class Listener  extends \Prefab
         
        $paymentData =  $checkout->paymentData();
        
+       
        if(empty($paymentData['payment_method_nonce'])) {
            //if empty cart->nonce is empty fo paypal? one as well
            $checkout->setError('Payment Method is Invalid');
@@ -117,7 +118,7 @@ class Listener  extends \Prefab
                     \Dsc\System::instance()->setUserState('shop.checkout.register.flash_filled', true);
                     $flash = \Dsc\Flash::instance();
                     $flash->store(array());
-                    \Base::instance()->reroute('/shop/checkout');
+                    \Base::instance()->reroute('/shop/payment');
                     return;
                 }
         
@@ -130,7 +131,7 @@ class Listener  extends \Prefab
                 \Shop\Models\Customers::sendNewCustomerEmail($identity->id);
         
             }
-           
+            
             /*
              * BEFORE WE CAN CHECKOUT WITH BRAINTREE WE NEED TO HAVE A BRAINTREE CUSTOMER SO LETS CHECK TO SEE IF WE HAVE ONE AND IF SO LOAD IT SO WE CAN
              */

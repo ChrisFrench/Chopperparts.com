@@ -29,7 +29,10 @@ class Routes extends \Dsc\Routes\Group{
 								'controller' => 'Home',
 								'action' => 'index'
 								));
-		
+		$this->add( '/contact-us', 'GET', array(
+		    'controller' => 'ContactUs',
+		    'action' => 'index'
+		));
 		
 		
 	}

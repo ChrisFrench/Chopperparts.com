@@ -1,4 +1,4 @@
-s
+<div class="container">
     <div id="content-header">
         <h1>Search results for: <small><?php echo $q; ?></small></h1>
     </div>
@@ -110,3 +110,4 @@ s
             <?php } ?>            
         </div>
     </div>
+</div>
